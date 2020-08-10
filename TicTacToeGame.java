@@ -72,14 +72,14 @@ public class TicTacToeGame extends Application {
 	//Method to see if a winning combination is on the board by the specified player
 	private boolean checkWinner(int player) {
 		
-		//Checking if any of rows are filled by the player
+		//Checking if any of rows are filled by the current player
 		for(int i = 0; i <3; i++) {
 			if(board[i][0] == player && board[i][1] == player && board[i][2] == player) { //Row check
 				return true;
 			}
 		}
 		
-		//Checking if  any verticals are by current player
+		//Checking if any verticals are filled by current player
 		for(int i = 0; i <3; i++) {
 				if(board[0][i] == player && board[1][i] == player && board[2][i] == player) {
 					return true;
